@@ -1,6 +1,5 @@
 package pl.coderslab.maindao;
 
-import pl.coderslab.dbutil.DbUtil;
 import pl.coderslab.entity.User;
 import pl.coderslab.entity.UserDao;
 
@@ -32,12 +31,11 @@ public class MainDao {
             System.out.println("działa!");
         } else {
             System.out.println("nie działa");
-        };
+        }
 
         //UPDATE
         UserDao userDao4 = new UserDao();
-        User user2 = new User();
-        user2 = userDao4.read(12);
+        User user2 = userDao4.read(12);
         userDao4.update(user2);
 
         //DELETE
